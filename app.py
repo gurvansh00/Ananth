@@ -8,9 +8,21 @@ import time
 #setting the page
 st.title('RRR')
 st.markdown('''This webapp uses two ML model to define your waste which in 
-turn helps you to  Reduce, Recycle, Reuse your waste''') 
+turn helps you to  Reduce, Recycle, Reuse your waste''')
 object = []
 type = []
+
+#background image
+page_bg_img = '''
+<style>
+body {
+background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+background-size: cover;
+}
+</style>
+'''
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 #loading the models
 model1 = YOLO('yolov8x-cls.pt')
 model2 = YOLO('best.pt')
