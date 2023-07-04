@@ -16,7 +16,7 @@ type = []
 page_bg_img = '''
 <style>
 body {
-background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+background-image: url("https://www.earthreminder.com/wp-content/uploads/2021/02/benefits-of-recycling-for-the-environment.jpg");
 background-size: cover;
 }
 </style>
