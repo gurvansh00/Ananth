@@ -13,7 +13,7 @@ object = []
 type = []
 #loading the models
 model1 = YOLO('yolov8x-cls.pt')
-model2 = YOLO('/Users/gurvansh/anan/runs/classify/train2/weights/best.pt')
+model2 = YOLO('best.pt')
 
 # Set up the OpenAI API client
 openai.api_key = "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"
