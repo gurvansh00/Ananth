@@ -13,15 +13,18 @@ object = []
 type = []
 
 #background image
-page_bg_img = '''
-<style>
-body {
-background-image: url("https://www.earthreminder.com/wp-content/uploads/2021/02/benefits-of-recycling-for-the-environment.jpg");
-background-size: cover;
-}
-</style>
-'''
-st.markdown(page_bg_img, unsafe_allow_html=True)
+st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://cdn.pixabay.com/photo/2019/04/24/11/27/flowers-4151900_960_720.jpg");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
 
 #loading the models
 model1 = YOLO('yolov8x-cls.pt')
