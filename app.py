@@ -5,7 +5,7 @@ from PIL import Image
 import time
 from openai import OpenAI
 client = OpenAI()
-completion = await client.chat.completions.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": "Hello world"}])
+
 
 #setting the page
 st.title('RRR')
