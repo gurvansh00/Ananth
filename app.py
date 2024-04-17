@@ -1,9 +1,11 @@
 #importing the libraries
 import streamlit as st
 from ultralytics import YOLO
-import openai
 from PIL import Image
 import time
+from openai import OpenAI
+client = OpenAI()
+completion = await client.chat.completions.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": "Hello world"}])
 
 #setting the page
 st.title('RRR')
@@ -38,7 +40,7 @@ img = st.file_uploader('Select your input image in jpg/jpeg',type=['jpg','png','
 
 #function for the search item
 def search(pr):
-	completion =openai.ChatCompletion.create(model="gpt-3.5-turbo",messages=[{"role":"assistant","content":pr}])
+	completion =client.chat.completions.create(model="gpt-3.5-turbo",messages=[{"role":"assistant","content":pr}])
 	response = completion['choices'][0]['message']['content']
 	return response
 #processing
