@@ -31,7 +31,7 @@ model1 = YOLO('yolov8x-cls.pt')
 model2 = YOLO('best.pt')
 
 # Set up the OpenAI API client
-openai.api_key = "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"
+openai.api_key = "sk-proj-ZkBB7k7Yse02mvT17lhbT3BlbkFJ7xSCnwtS80jaaFJp2XR4"
 
 #loading the image
 img = st.file_uploader('Select your input image in jpg/jpeg',type=['jpg','png','jpeg'])
