@@ -1,4 +1,4 @@
 streamlit
 ultralytics
-openai==0.28
+openai
 pillow
