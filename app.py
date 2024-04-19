@@ -33,7 +33,7 @@ st.markdown(
 def models():
 	mod1 = YOLO('yolov8x-cls.pt')
 	mod2 = YOLO('best.pt')
-	return mod2,mod2
+	return mod1,mod2
 
 # Set up the OpenAI API client
 #openai.api_key = "sk-proj-ZkBB7k7Yse02mvT17lhbT3BlbkFJ7xSCnwtS80jaaFJp2XR4"
