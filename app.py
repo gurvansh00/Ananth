@@ -41,7 +41,7 @@ img = st.file_uploader('Select your input image in jpg/jpeg',type=['jpg','png','
 #function for the search item
 def search(pr):
 	completion =client.chat.completions.create(model="gpt-3.5-turbo",messages=[{"role":"assistant","content":pr}])
-	response = completion['choices'][0]['message']['content']
+	response = response.choices[0].message.content
 	return response
 #processing
 if img is not None:
