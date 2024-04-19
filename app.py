@@ -29,7 +29,7 @@ st.markdown(
      )
 
 #loading the models
-@st.cache_resourse
+@st.cache_resource
 def models():
 	mod1 = YOLO('yolov8x-cls.pt')
 	mod2 = YOLO('best.pt')
