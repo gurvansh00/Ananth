@@ -29,8 +29,11 @@ st.markdown(
      )
 
 #loading the models
-model1 = YOLO('yolov8x-cls.pt')
-model2 = YOLO('best.pt')
+@st.cache_resourse
+def models()
+	mod1 = YOLO('yolov8x-cls.pt')
+	mod2 = YOLO('best.pt')
+	return mod2,mod2
 
 # Set up the OpenAI API client
 #openai.api_key = "sk-proj-ZkBB7k7Yse02mvT17lhbT3BlbkFJ7xSCnwtS80jaaFJp2XR4"
@@ -48,6 +51,7 @@ if img is not None:
 	img = Image.open(img)
 	st.image(img)
 	col1,col2 = st.columns(2)
+	model1,model2 = models()
 	res1 = model1.predict(img)
 	res2 = model2.predict(img)
 	two = res2[0].probs.top5
