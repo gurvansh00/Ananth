@@ -16,7 +16,8 @@ def generate_prompt(material, obj, action):
     return prompt
 
 st.set_page_config(page_title="AI for Earth Waste Management")
-
+object = []
+type = []
 #loading the models
 @st.cache_resource
 def models():
