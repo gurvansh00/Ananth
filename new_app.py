@@ -48,7 +48,7 @@ with tab1:
     uploaded_image = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
     if uploaded_image is not None:
         st.image(uploaded_image, caption='Uploaded Image.', use_column_width=True)
-        img = Image.open(img)
+        img = Image.open(uploaded_image)
         st.image(img)
         col1,col2 = st.columns(2)
         model1,model2 = models()
