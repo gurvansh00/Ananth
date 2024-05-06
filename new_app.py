@@ -39,13 +39,18 @@ with tab1:
     homecol2.image("d3df85a0-600f-41f1-9ad3-31da745a9e1d.JPG")
     st.header("AI for Earth Waste Management")
     st.write("Welcome to AI for Earth Waste Management!")
-    st.set_page_config(
-    page_title="Your App Title",
-    page_icon=":smiley:",
-    layout="wide",  # Wide layout
-    initial_sidebar_state="expanded",  # Expand the sidebar by default
-    background_image="d3df85a0-600f-41f1-9ad3-31da745a9e1d.JPG"  # Background image URL
-)   
+    st.markdown(
+    """
+    <style>
+    body {
+        background-image: url('d3df85a0-600f-41f1-9ad3-31da745a9e1d.JPG');
+        background-size: cover;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
     uploaded_image = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
     if uploaded_image is not None:
         img = Image.open(uploaded_image)
