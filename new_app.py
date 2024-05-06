@@ -115,5 +115,5 @@ with tab2:
      
     with st.container(height=320):
         learncol7,learncol8 = st.columns([0.7,0.3])
-        learncol7.write("ECO NATIVE")
+        learncol7.write("ECO INTELLECT")
         learncol8.image("d3df85a0-600f-41f1-9ad3-31da745a9e1d.JPG")
