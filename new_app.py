@@ -1,3 +1,4 @@
+import openai
 import streamlit as st
 from ultralytics import YOLO
 from PIL import Image
@@ -26,7 +27,7 @@ def models():
 	return mod1,mod2
 
 # Set up the OpenAI API client
-#openai.api_key = "sk-proj-ZkBB7k7Yse02mvT17lhbT3BlbkFJ7xSCnwtS80jaaFJp2XR4"
+openai.api_key = "sk-proj-ZkBB7k7Yse02mvT17lhbT3BlbkFJ7xSCnwtS80jaaFJp2XR4"
 
 def search(pr):
 	completion =client.chat.completions.create(model="gpt-3.5-turbo",messages=[{"role":"assistant","content":pr}])
@@ -91,26 +92,6 @@ with tab1:
 
 with tab2:
     col1,col2 = st.columns([0.7,0.3])
-    import streamlit as st
-
-# Create tabs
-tabs = ["tab1", "tab2"]
-selected_tab = st.radio("Select Tab", tabs)
-
-# Display content based on selected tab
-if selected_tab == "tab1":
-    # Add background color to tab1
-    st.markdown("""
-        <style>
-            #tab-tab1 .stTab {
-                background-color: #00FF00; /* Green background color */
-            }
-        </style>
-    """, unsafe_allow_html=True)
-    st.write("Content of tab 1")
-else:
-    st.write("Content of tab 2")
-
     st.title("Learn")
     st.write("Welcome to the Learning Section!")
     st.write("Here, you can find information about waste management and sustainability.")
@@ -118,15 +99,15 @@ else:
     with st.container(height=500):
         learncol1,learncol2 = st.columns([0.7,0.3])
         learncol1.image("https://img.freepik.com/premium-vector/reuse-recycle-sign-isolated-white-background-vector-illustration_76844-3535.jpg?w=360")
-        learncol2.write("PLACEHOLDER")
+        learncol2.write(" Reuse: Give Things a Second Chance Reuse is all about giving things a second life instead of throwing them away. By finding new uses for old items, we can reduce waste and save valuable resources.Whether it's repurposing old jars as storage containers, sharing clothes or tools with friends, repairing broken items instead of replacing them, borrowing instead of buying, or donating items to those in need, every act of reuse contributes to a more sustainable future. ")
    
     with st.container(height=500):
         learncol3,learncol4 = st.columns([0.7,0.3])
-        learncol3.write("PLACEHOLDER")
+        learncol3.write("Reduce: Use Wisely, Waste Less Reducing consumption is about being mindful of our purchases and using resources wisely. It involves buying only what we need, choosing products with minimal packaging, and avoiding single-use items whenever possible. By prioritizing quality over quantity, investing in durable goods, and embracing a less-is-more mindset, we can minimize our environmental footprint and live more sustainably.")
         learncol4.image("https://en.pimg.jp/049/862/808/1/49862808.jpg")
    
     with st.container(height=500):
         learncol5,learncol6 = st.columns([0.7,0.3])
-        learncol5.write("PLACEHOLDER")
+        learncol5.write("Recycle: Close the Loop, Recycling is the process of turning old materials into new products, preventing them from ending up in landfills. It's a crucial part of the circular economy, where materials are reused and recycled indefinitely. By separating recyclables like paper, plastic, glass, and metal from our trash, supporting recycling programs, and purchasing products made from recycled materials, we can help conserve resources, reduce pollution, and protect the planet for future generations.")
         learncol6.image("https://images.prismic.io/palmettoblog/ca5236ef-970b-4165-8242-53919833a4bc_why-you-should-recycle-environmental-economic-benefits.jpg?auto=compress,format&rect=0,19,1143,762&w=1200&h=800")
 
