@@ -114,7 +114,7 @@ with tab2:
         learncol4.image("https://media.licdn.com/dms/image/C4E12AQFyMktpRoovaA/article-inline_image-shrink_1500_2232/0/1646581326169?e=1720051200&v=beta&t=o3q0rZfah_ffENig4JjSY-au9OTvfIXRldfub4HZgHc")
    
     with st.container(height=500):
-        learncol5,learncol6 = st.columns([0.7,0.3])
+        learncol5,learncol6 = st.columns([0.3,0.7])
         learncol6.write("Recycle: Close the Loop Recycling is the process of turning old materials into new products, preventing them from ending up in landfills. It's a crucial part of the circular economy, where materials are reused and recycled indefinitely. By separating recyclables like paper, plastic, glass, and metal from our trash, supporting recycling programs, and purchasing products made from recycled materials, and protect the planet for future generations. It could be put into a center that potentially as recycling opportunities so that the object may be built into something else.")
         learncol5.image("https://images.prismic.io/palmettoblog/ca5236ef-970b-4165-8242-53919833a4bc_why-you-should-recycle-environmental-economic-benefits.jpg?auto=compress,format&rect=0,19,1143,762&w=1200&h=800")
 
