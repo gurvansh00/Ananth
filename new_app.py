@@ -18,36 +18,23 @@ def generate_prompt(material, obj, action):
 st.set_page_config(page_title="AI for Earth Waste Management")
 object = []
 type = []
-
 #loading the models
 @st.cache_resource
 def models():
-    mod1 = YOLO('yolov8x-cls.pt')
-    mod2 = YOLO('best.pt')
-    return mod1,mod2
+	mod1 = YOLO('yolov8x-cls.pt')
+	mod2 = YOLO('best.pt')
+	return mod1,mod2
 
 # Set up the OpenAI API client
 #openai.api_key = "sk-proj-ZkBB7k7Yse02mvT17lhbT3BlbkFJ7xSCnwtS80jaaFJp2XR4"
 
 def search(pr):
-    completion =client.chat.completions.create(model="gpt-3.5-turbo",messages=[{"role":"assistant","content":pr}])
-    response = completion.choices[0].message.content
-    return response
-
-tab1,tab2 = st.columns(2)
+	completion =client.chat.completions.create(model="gpt-3.5-turbo",messages=[{"role":"assistant","content":pr}])
+	response = completion.choices[0].message.content
+	return response
+tab1,tab2 = st.tabs(["HOME","LEARN"])
 
 with tab1:
-    # Add green background color to HOME tab
-    st.markdown(
-        """
-        <style>
-        .reportview-container {
-            background: #00FF00;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
     homecol1,homecol2 = st.columns([0.7,0.3])
     homecol2.image("https://static.vecteezy.com/system/resources/previews/002/396/557/non_2x/reduce-reduce-recycle-free-vector.jpg")
     st.header("AI for Earth Waste Management")
@@ -103,17 +90,6 @@ with tab1:
 
 
 with tab2:
-    # Add green background color to LEARN tab
-    st.markdown(
-        """
-        <style>
-        .reportview-container {
-            background: #00FF00;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
     col1,col2 = st.columns([0.7,0.3])
     st.title("Learn")
     st.write("Welcome to the Learning Section!")
@@ -133,3 +109,4 @@ with tab2:
         learncol5,learncol6 = st.columns([0.7,0.3])
         learncol5.write("PLACEHOLDER")
         learncol6.image("https://images.prismic.io/palmettoblog/ca5236ef-970b-4165-8242-53919833a4bc_why-you-should-recycle-environmental-economic-benefits.jpg?auto=compress,format&rect=0,19,1143,762&w=1200&h=800")
+
