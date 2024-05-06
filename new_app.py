@@ -35,7 +35,7 @@ def search(pr):
 tab1,tab2 = st.tabs(["HOME","LEARN"])
 
 with tab1:
-   homecol1,homecol2 = st.columns([0.7,0.3])
+    homecol1,homecol2 = st.columns([0.7,0.3])
     homecol2.image("https://static.vecteezy.com/system/resources/previews/002/396/557/non_2x/reduce-reduce-recycle-free-vector.jpg")
     st.header("AI for Earth Waste Management")
     st.write("Welcome to AI for Earth Waste Management!")
@@ -52,6 +52,7 @@ with tab1:
                       - Match the material type with the Object
                       - Choose the option from Reuse, Recycle or Reduce
                       """)
+uploaded_image = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
 if uploaded_image is not None:
         img = Image.open(uploaded_image)
         st.image(img)
