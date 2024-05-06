@@ -48,8 +48,8 @@ with tab1:
                       - Match the material type with the Object
                       - Choose the option from Reuse, Recycle or Reduce
                       """)
-uploaded_image = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
-if uploaded_image is not None:
+   uploaded_image = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
+   if uploaded_image is not None:
         img = Image.open(uploaded_image)
         st.image(img)
         col1,col2 = st.columns(2)
