@@ -76,7 +76,7 @@ with tab1:
         """
         <style>
         body {
-            background-color: #008000
+            background-color: #5346232
         }
         </style>
         """,
