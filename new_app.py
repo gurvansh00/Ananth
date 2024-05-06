@@ -50,12 +50,10 @@ with tab1:
                       """)
     st.markdown("""
     <style>
-    .reportview-container {
-        background: url("d3df85a0-600f-41f1-9ad3-31da745a9e1d.JPG")
-    }
-   .sidebar .sidebar-content {
-        background: url("d3df85a0-600f-41f1-9ad3-31da745a9e1d.JPG")
-    }
+    .stApp {{
+     background-image: url("https://img.freepik.com/free-photo/abstract-blur-empty-green-gradient-studio-well-use-as-backgroundwebsite-templateframebusiness-report_1258-52607.jpg");
+     background-size: cover;
+         }}
     </style>
     """,unsafe_allow_html=True)
 uploaded_image = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
