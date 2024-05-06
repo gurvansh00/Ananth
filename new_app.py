@@ -48,14 +48,6 @@ with tab1:
                       - Match the material type with the Object
                       - Choose the option from Reuse, Recycle or Reduce
                       """)
-    st.markdown("""
-    <style>
-    .stApp {{
-     background-image: url("https://marketplace.canva.com/EADao-idQPQ/1/0/1600w/canva-lime-green-gradient-background-RM8dZAN1_xU.jpg");
-     background-size: cover;
-         }}
-    </style>
-    """,unsafe_allow_html=True)
 uploaded_image = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
 if uploaded_image is not None:
         img = Image.open(uploaded_image)
