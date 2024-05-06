@@ -111,7 +111,7 @@ with tab2:
     with st.container(height=500):
         learncol3,learncol4 = st.columns([0.7,0.3])
         learncol3.write("Reduce: Use Wisely, Waste Less Reducing consumption is about being mindful of our purchases and using resources wisely. It involves buying only what we need, choosing products with minimal packaging, and avoiding single-use items whenever possible. By prioritizing quality over quantity, investing in durable goods, and embracing a less-is-more mindset, we can live more sustainably.For reducing, they put it in a bin or contribute it to an area that will reduce and potentially decompose the object. ")
-        learncol4.image("https://en.pimg.jp/049/862/808/1/49862808.jpg")
+        learncol4.image("https://media.licdn.com/dms/image/C4E12AQFyMktpRoovaA/article-inline_image-shrink_1500_2232/0/1646581326169?e=1720051200&v=beta&t=o3q0rZfah_ffENig4JjSY-au9OTvfIXRldfub4HZgHc")
    
     with st.container(height=500):
         learncol5,learncol6 = st.columns([0.7,0.3])
