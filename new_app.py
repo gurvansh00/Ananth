@@ -103,17 +103,17 @@ with tab2:
     st.write("Welcome to the Learning Section!")
     st.write("Here, you can find information about waste management and sustainability.")
    
-    with st.container(height=500):
+    with st.container(height=400):
         learncol1,learncol2 = st.columns([0.3,0.7])
         learncol1.image("https://www.josafety.dk/images/Produktbilleder/Reuse-Affaldsskilt-WA3601P240X240.png")
         learncol2.write("Reuse: Give Things a Second ChanceReuse is all about giving things a second life instead of throwing them away. By finding new uses for old items, we can reduce waste and save valuable resources. Whether it's repurposing old jars as storage containers, sharing clothes or tools with friends, repairing broken items instead of replacing them, borrowing instead of buying, or donating items to those in need, every act of reuse contributes to a more sustainable future. The object could be reused in different ways rather than just being thrown away after one use.")
    
-    with st.container(height=500):
+    with st.container(height=400):
         learncol3,learncol4 = st.columns([0.7,0.3])
         learncol3.write("Reduce: Use Wisely, Waste Less Reducing consumption is about being mindful of our purchases and using resources wisely. It involves buying only what we need, choosing products with minimal packaging, and avoiding single-use items whenever possible. By prioritizing quality over quantity, investing in durable goods, and embracing a less-is-more mindset, we can live more sustainably.For reducing, they put it in a bin or contribute it to an area that will reduce and potentially decompose the object. ")
         learncol4.image("https://media.licdn.com/dms/image/C4E12AQFyMktpRoovaA/article-inline_image-shrink_1500_2232/0/1646581326169?e=1720051200&v=beta&t=o3q0rZfah_ffENig4JjSY-au9OTvfIXRldfub4HZgHc")
    
-    with st.container(height=500):
+    with st.container(height=400):
         learncol5,learncol6 = st.columns([0.3,0.7])
         learncol6.write("Recycle: Close the Loop Recycling is the process of turning old materials into new products, preventing them from ending up in landfills. It's a crucial part of the circular economy, where materials are reused and recycled indefinitely. By separating recyclables like paper, plastic, glass, and metal from our trash, supporting recycling programs, and purchasing products made from recycled materials, and protect the planet for future generations. It could be put into a center that potentially as recycling opportunities so that the object may be built into something else.")
         learncol5.image("https://images.prismic.io/palmettoblog/ca5236ef-970b-4165-8242-53919833a4bc_why-you-should-recycle-environmental-economic-benefits.jpg?auto=compress,format&rect=0,19,1143,762&w=1200&h=800")
