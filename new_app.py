@@ -40,7 +40,7 @@ with tab1:
         """
         <style>
         body {
-            background-color: #008000
+            background-color:#355E3B
         }
         </style>
         """,
