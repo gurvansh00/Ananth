@@ -48,6 +48,16 @@ with tab1:
                       - Match the material type with the Object
                       - Choose the option from Reuse, Recycle or Reduce
                       """)
+    st.markdown("""
+    <style>
+    .reportview-container {
+        background: url("d3df85a0-600f-41f1-9ad3-31da745a9e1d.JPG")
+    }
+   .sidebar .sidebar-content {
+        background: url("d3df85a0-600f-41f1-9ad3-31da745a9e1d.JPG")
+    }
+    </style>
+    """,unsafe_allow_html=True)
 uploaded_image = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
 if uploaded_image is not None:
         img = Image.open(uploaded_image)
