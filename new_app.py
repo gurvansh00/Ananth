@@ -49,7 +49,7 @@ with tab1:
     homecol1.markdown("""
                      <style>
     .stApp {{
-    background-image: url("d3df85a0-600f-41f1-9ad3-31da745a9e1d.JPG");
+    background-image: url("https://media.istockphoto.com/id/1523130039/photo/green-rustic-texture-high-quality-texture-in-extremely-high-resolution-dark-green-grunge.webp?b=1&s=170667a&w=0&k=20&c=hajEuftZDwIPT6PnIANZGjS7MWgiWGOlvYxqNaM3Z9g=");
     background-size: cover;
            }}
     </style>
