@@ -27,6 +27,7 @@ def models():
 
 # Set up the OpenAI API client
 #openai.api_key = "sk-proj-ZkBB7k7Yse02mvT17lhbT3BlbkFJ7xSCnwtS80jaaFJp2XR4"
+#123
 
 def search(pr):
 	completion =client.chat.completions.create(model="gpt-3.5-turbo",messages=[{"role":"assistant","content":pr}])
