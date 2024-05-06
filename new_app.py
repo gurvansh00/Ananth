@@ -46,14 +46,6 @@ with tab1:
                       - Match the material type with the Object
                       - Choose the option from Reuse, Recycle or Reduce
                       """)
-    st.markdown("""
-                     <style>
-    .stApp {{
-    background-image: url("https://media.istockphoto.com/id/1523130039/photo/green-rustic-texture-high-quality-texture-in-extremely-high-resolution-dark-green-grunge.webp?b=1&s=170667a&w=0&k=20&c=hajEuftZDwIPT6PnIANZGjS7MWgiWGOlvYxqNaM3Z9g=");
-    background-size: cover;
-           }}
-    </style>
-                      """,unsafe_allow_html = True)
 uploaded_image = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
 if uploaded_image is not None:
         img = Image.open(uploaded_image)
