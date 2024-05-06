@@ -36,7 +36,7 @@ tab1,tab2 = st.tabs(["HOME","LEARN"])
 
 with tab1:
     homecol1,homecol2 = st.columns([0.7,0.3])
-    homecol2.image("https://static.vecteezy.com/system/resources/previews/002/396/557/non_2x/reduce-reduce-recycle-free-vector.jpg")
+    homecol2.image("d3df85a0-600f-41f1-9ad3-31da745a9e1d.JPG")
     st.header("AI for Earth Waste Management")
     st.write("Welcome to AI for Earth Waste Management!")
     homecol1.subheader("How It Works")
@@ -47,11 +47,13 @@ with tab1:
                       - Choose the option from Reuse, Recycle or Reduce
                       """)
     homecol1.markdown("""
-                      - Upload the clicked image
-                      - wait for the AI to do its magic
-                      - Match the material type with the Object
-                      - Choose the option from Reuse, Recycle or Reduce
-                      """)
+                     <style>
+    .stApp {
+    background-image: url("d3df85a0-600f-41f1-9ad3-31da745a9e1d.JPG");
+    background-size: cover;
+    }
+    </style>
+                      """,unsafe_allow_html = True)
 uploaded_image = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
 if uploaded_image is not None:
         img = Image.open(uploaded_image)
