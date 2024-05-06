@@ -1,4 +1,3 @@
-import openai
 import streamlit as st
 from ultralytics import YOLO
 from PIL import Image
@@ -27,7 +26,7 @@ def models():
 	return mod1,mod2
 
 # Set up the OpenAI API client
-openai.api_key = "sk-proj-ZkBB7k7Yse02mvT17lhbT3BlbkFJ7xSCnwtS80jaaFJp2XR4"
+#openai.api_key = "sk-proj-ZkBB7k7Yse02mvT17lhbT3BlbkFJ7xSCnwtS80jaaFJp2XR4"
 
 def search(pr):
 	completion =client.chat.completions.create(model="gpt-3.5-turbo",messages=[{"role":"assistant","content":pr}])
