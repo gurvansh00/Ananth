@@ -5,6 +5,8 @@ import time
 from openai import OpenAI
 client = OpenAI()
 
+#eco
+
 def identify_material_with_cnn(image):
     return "Plastic"
 
