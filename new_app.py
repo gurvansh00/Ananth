@@ -35,16 +35,8 @@ def search(pr):
 tab1,tab2 = st.tabs(["HOME","LEARN"])
 
 with tab1:
-    st.markdown("""
-                <style>
-    .stApp {
-    background-image: url("d3df85a0-600f-41f1-9ad3-31da745a9e1d.JPG");
-    background-size: cover;
-    }
-    </style>
-                """, unsafe_allow_html = True)
     homecol1,homecol2 = st.columns([0.7,0.3])
-    homecol2.image("d3df85a0-600f-41f1-9ad3-31da745a9e1d.JPG")
+    homecol2.image("https://static.vecteezy.com/system/resources/previews/002/396/557/non_2x/reduce-reduce-recycle-free-vector.jpg")
     st.header("AI for Earth Waste Management")
     st.write("Welcome to AI for Earth Waste Management!")
     homecol1.subheader("How It Works")
@@ -106,15 +98,15 @@ with tab2:
     with st.container(height=500):
         learncol1,learncol2 = st.columns([0.7,0.3])
         learncol1.image("https://img.freepik.com/premium-vector/reuse-recycle-sign-isolated-white-background-vector-illustration_76844-3535.jpg?w=360")
-        learncol2.write(" Reuse: Give Things a Second Chance Reuse is all about giving things a second life instead of throwing them away. By finding new uses for old items, we can reduce waste and save valuable resources.Whether it's repurposing old jars as storage containers, sharing clothes or tools with friends, repairing broken items instead of replacing them, borrowing instead of buying, or donating items to those in need, every act of reuse contributes to a more sustainable future. ")
+        learncol2.write("PLACEHOLDER")
    
     with st.container(height=500):
         learncol3,learncol4 = st.columns([0.7,0.3])
-        learncol3.write("Reduce: Use Wisely, Waste Less Reducing consumption is about being mindful of our purchases and using resources wisely. It involves buying only what we need, choosing products with minimal packaging, and avoiding single-use items whenever possible. By prioritizing quality over quantity, investing in durable goods, and embracing a less-is-more mindset, we can minimize our environmental footprint and live more sustainably.")
+        learncol3.write("PLACEHOLDER")
         learncol4.image("https://en.pimg.jp/049/862/808/1/49862808.jpg")
    
     with st.container(height=500):
         learncol5,learncol6 = st.columns([0.7,0.3])
-        learncol5.write("Recycle: Close the Loop, Recycling is the process of turning old materials into new products, preventing them from ending up in landfills. It's a crucial part of the circular economy, where materials are reused and recycled indefinitely. By separating recyclables like paper, plastic, glass, and metal from our trash, supporting recycling programs, and purchasing products made from recycled materials, we can help conserve resources, reduce pollution, and protect the planet for future generations.")
+        learncol5.write("PLACEHOLDER")
         learncol6.image("https://images.prismic.io/palmettoblog/ca5236ef-970b-4165-8242-53919833a4bc_why-you-should-recycle-environmental-economic-benefits.jpg?auto=compress,format&rect=0,19,1143,762&w=1200&h=800")
 
