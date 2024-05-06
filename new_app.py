@@ -50,45 +50,45 @@ with tab1:
                       """)
 	uploaded_image = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
 	if uploaded_image is not None:
-	        img = Image.open(uploaded_image)
-	        st.image(img)
-	        col1,col2 = st.columns(2)
-	        model1,model2 = models()
-	        res1 = model1.predict(img)
-	        res2 = model2.predict(img)
-	        two = res2[0].probs.top5
-	        col1.header('Object Classification')
-	        for name in res1[0].probs.top5:
-	            col1.write(res1[0].names[name])
-	            object.append(res1[0].names[name])
-	        col2.header('Material Classification')
-	        for i in two:
-	            col2.write(res2[0].names[i])
-	            type.append(res2[0].names[i])
-	        st.header('Choose a combination of one value from both categories by defining the numbers below')
-	        col = st.columns(2)
-	        x = col[0].number_input('select the number for object',min_value = 0,max_value=5,step=1)
-	        y = col[1].number_input('select the number for type',min_value = 0,max_value=5,step=1)
-	        time.sleep(1)
-	        if x >0 and y>0:
-	            string = type[y-1]+" "+object[x-1]
-	            st.write(string)
-	        col1, col2, col3 = st.columns(3)
-	        with col1:
-	            button1 = st.button('Recycle')
-	        with col2:
-	            button2 = st.button('Reduce')
-	        with col3:
-	            button3 = st.button('Reuse')
-	        if button1:
-	            st2 = f'please give 5 detailed ways to recycle{string} waste'
-	            st.write(search(st2))
-	        if button2:
-	            st2 = f'can you please describe detailed steps to reduce {string} waste'
-	            st.write(search(st2))
-	        if button3:
-	            st2 = f'can you please generate 3 ways to reuse/repurpose {string} in a very detailed/step by step manner'
-	            st.write(search(st2))
+		img = Image.open(uploaded_image)
+		st.image(img)
+		col1,col2 = st.columns(2)
+		model1,model2 = models()
+		res1 = model1.predict(img)
+		res2 = model2.predict(img)
+		two = res2[0].probs.top5
+		col1.header('Object Classification')
+		for name in res1[0].probs.top5:
+			col1.write(res1[0].names[name])
+			object.append(res1[0].names[name])
+		col2.header('Material Classification')
+		for i in two:
+			col2.write(res2[0].names[i])
+			type.append(res2[0].names[i])
+		st.header('Choose a combination of one value from both categories by defining the numbers below')
+		col = st.columns(2)
+		x = col[0].number_input('select the number for object',min_value = 0,max_value=5,step=1)
+		y = col[1].number_input('select the number for type',min_value = 0,max_value=5,step=1)
+		time.sleep(1)
+		if x >0 and y>0:
+			string = type[y-1]+" "+object[x-1]
+			st.write(string)
+		col1, col2, col3 = st.columns(3)
+		with col1:
+			button1 = st.button('Recycle')
+		with col2:
+			button2 = st.button('Reduce')
+		with col3:
+			button3 = st.button('Reuse')
+		if button1:
+			st2 = f'please give 5 detailed ways to recycle{string} waste'
+			st.write(search(st2))
+		if button2:
+			st2 = f'can you please describe detailed steps to reduce {string} waste'
+			st.write(search(st2))
+		if button3:
+			st2 = f'can you please generate 3 ways to reuse/repurpose {string} in a very detailed/step by step manner'
+			st.write(search(st2))
 		
 
 
