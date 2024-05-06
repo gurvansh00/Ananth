@@ -105,7 +105,7 @@ with tab2:
    
     with st.container(height=500):
         learncol1,learncol2 = st.columns([0.7,0.3])
-        learncol1.image("https://www.recycling.com/wp-content/uploads/2017/07/reuse-reusing-step-symbol-logo-green.png")
+        learncol1.image("https://www.josafety.dk/images/Produktbilleder/Reuse-Affaldsskilt-WA3601P240X240.png")
         learncol2.write("Reuse: Give Things a Second ChanceReuse is all about giving things a second life instead of throwing them away. By finding new uses for old items, we can reduce waste and save valuable resources. Whether it's repurposing old jars as storage containers, sharing clothes or tools with friends, repairing broken items instead of replacing them, borrowing instead of buying, or donating items to those in need, every act of reuse contributes to a more sustainable future. The object could be reused in different ways rather than just being thrown away after one use.")
    
     with st.container(height=500):
