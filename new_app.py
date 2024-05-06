@@ -35,6 +35,16 @@ def search(pr):
 tab1,tab2 = st.tabs(["HOME","LEARN"])
 
 with tab1:
+   st.markdown(
+    """
+    <style>
+    body {
+        background-color: #f0f2f6; /* You can change the color code here */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
     homecol1,homecol2 = st.columns([0.7,0.3])
     homecol2.image("d3df85a0-600f-41f1-9ad3-31da745a9e1d.JPG")
     st.header("AI for Earth Waste Management")
