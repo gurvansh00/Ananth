@@ -91,7 +91,26 @@ with tab1:
 
 with tab2:
     col1,col2 = st.columns([0.7,0.3])
-    st.markdown('<style>body {background-color: #00FF00;}</style>', unsafe_allow_html=True)
+    import streamlit as st
+
+# Create tabs
+tabs = ["tab1", "tab2"]
+selected_tab = st.radio("Select Tab", tabs)
+
+# Display content based on selected tab
+if selected_tab == "tab1":
+    # Add background color to tab1
+    st.markdown("""
+        <style>
+            #tab-tab1 .stTab {
+                background-color: #00FF00; /* Green background color */
+            }
+        </style>
+    """, unsafe_allow_html=True)
+    st.write("Content of tab 1")
+else:
+    st.write("Content of tab 2")
+
     st.title("Learn")
     st.write("Welcome to the Learning Section!")
     st.write("Here, you can find information about waste management and sustainability.")
