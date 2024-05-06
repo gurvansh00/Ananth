@@ -91,6 +91,7 @@ with tab1:
 
 with tab2:
     col1,col2 = st.columns([0.7,0.3])
+    st.markdown('<style>body {background-color: #f0f0f0;}</style>', unsafe_allow_html=True)
     st.title("Learn")
     st.write("Welcome to the Learning Section!")
     st.write("Here, you can find information about waste management and sustainability.")
