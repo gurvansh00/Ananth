@@ -126,5 +126,4 @@ with tab2:
     with st.container(height=320):
         learncol7,learncol8 = st.columns([0.7,0.3])
         learncol7.write("ECO NATIVE")
-        learncol8.image("https://images.prismic.io/palmettoblog/ca5236ef-970b-4165-8242-53919833a4bc_why-you-should-recycle-environmental-economic-benefits.jpg?auto=compress,format&rect=0,19,1143,762&w=1200&h=800")
-     
+        learncol8.image("d3df85a0-600f-41f1-9ad3-31da745a9e1d.JPG")
