@@ -51,7 +51,7 @@ with tab1:
     st.markdown("""
     <style>
     .stApp {{
-     background-image: url("https://img.freepik.com/free-photo/abstract-blur-empty-green-gradient-studio-well-use-as-backgroundwebsite-templateframebusiness-report_1258-52607.jpg");
+     background-image: url("https://marketplace.canva.com/EADao-idQPQ/1/0/1600w/canva-lime-green-gradient-background-RM8dZAN1_xU.jpg");
      background-size: cover;
          }}
     </style>
