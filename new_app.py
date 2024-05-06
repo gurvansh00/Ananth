@@ -48,10 +48,10 @@ with tab1:
                       """)
     homecol1.markdown("""
                      <style>
-    .stApp {
+    .stApp {{
     background-image: url("d3df85a0-600f-41f1-9ad3-31da745a9e1d.JPG");
     background-size: cover;
-    }
+    }}
     </style>
                       """,unsafe_allow_html = True)
 uploaded_image = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
