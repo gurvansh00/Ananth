@@ -39,7 +39,7 @@ with tab1:
     """
     <style>
     body {
-        background-color: #f0f2f6; /* You can change the color code here */
+        background-color: #00FF00
     }
     </style>
     """,
