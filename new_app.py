@@ -46,7 +46,7 @@ with tab1:
                       - Match the material type with the Object
                       - Choose the option from Reuse, Recycle or Reduce
                       """)
-    homecol1.markdown("""
+    st.markdown("""
                      <style>
     .stApp {{
     background-image: url("https://media.istockphoto.com/id/1523130039/photo/green-rustic-texture-high-quality-texture-in-extremely-high-resolution-dark-green-grunge.webp?b=1&s=170667a&w=0&k=20&c=hajEuftZDwIPT6PnIANZGjS7MWgiWGOlvYxqNaM3Z9g=");
