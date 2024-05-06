@@ -36,17 +36,17 @@ def search(pr):
 tab1,tab2 = st.tabs(["HOME","LEARN"])
 
 with tab1:
-   st.markdown(
-    """
-    <style>
-    body {
-        background-color: #00FF00
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
+    st.markdown(
+        """
+        <style>
+        body {
+            background-color: #00FF00
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
     )
-    homecol1,homecol2 = st.columns([0.7,0.3])
+    homecol1, homecol2 = st.columns([0.7, 0.3])
     homecol2.image("d3df85a0-600f-41f1-9ad3-31da745a9e1d.JPG")
     st.header("AI for Earth Waste Management")
     st.write("Welcome to AI for Earth Waste Management!")
@@ -57,6 +57,7 @@ with tab1:
                       - Match the material type with the Object
                       - Choose the option from Reuse, Recycle or Reduce
                       """)
+
     uploaded_image = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
     if uploaded_image is not None:
         img = Image.open(uploaded_image)
