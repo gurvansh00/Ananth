@@ -18,6 +18,18 @@ def generate_prompt(material, obj, action):
 st.set_page_config(page_title="AI for Earth Waste Management")
 object = []
 type = []
+
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #00FF00;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 #loading the models
 @st.cache_resource
 def models():
