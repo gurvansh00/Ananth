@@ -46,7 +46,7 @@ with tab1:
                       - Match the material type with the Object
                       - Choose the option from Reuse, Recycle or Reduce
                       """)
-     homecol1.markdown("""
+    homecol1.markdown("""
                       - Upload the clicked image
                       - wait for the AI to do its magic
                       - Match the material type with the Object
