@@ -113,7 +113,7 @@ with tab2:
         learncol6.write("Recycle: Close the Loop Recycling is the process of turning old materials into new products, preventing them from ending up in landfills. It's a crucial part of the circular economy, where materials are reused and recycled indefinitely. By separating recyclables like paper, plastic, glass, and metal from our trash, supporting recycling programs, and purchasing products made from recycled materials, and protect the planet for future generations. It could be put into a center that potentially as recycling opportunities so that the object may be built into something else.")
         learncol5.image("https://images.prismic.io/palmettoblog/ca5236ef-970b-4165-8242-53919833a4bc_why-you-should-recycle-environmental-economic-benefits.jpg?auto=compress,format&rect=0,19,1143,762&w=1200&h=800")
      
-    with st.container(height=300):
+    with st.container(height=200):
         learncol7,learncol8 = st.columns([0.7,0.3])
         learncol7.write("ECO INTELLECT")
         learncol8.image("d3df85a0-600f-41f1-9ad3-31da745a9e1d.JPG")
