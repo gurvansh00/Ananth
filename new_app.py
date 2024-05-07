@@ -37,7 +37,15 @@ def search(pr):
 tab1,tab2 = st.tabs(["HOME","LEARN"])
 
 with tab1:
-	st.header("ECO INTELLECTS")
+	title_alignment=
+	"""
+	<style>
+	ECO INTELLECT {
+	text-align: center
+	}
+	</style>
+	"""
+	st.markdown(title_alignment, unsafe_allow_html=True)
 	homecol1,homecol2 = st.columns([0.7,0.3])
 	homecol2.image("d3df85a0-600f-41f1-9ad3-31da745a9e1d.JPG")
 	st.write("Welcome to AI for Earth Waste Management!")
