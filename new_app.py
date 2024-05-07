@@ -115,5 +115,5 @@ with tab2:
      
     with st.container(height=200):
         learncol7,learncol8 = st.columns([0.7,0.3])
-        learncol7.write("ECO INTELLECT")
+        learncol7.write("Eco Intellects is a product designed to raise public awareness about eco-friendly practices by utilizing everyday trash. Through three options presented on the app—reduce, reuse, and recycle—users can submit their items and choose how to manage them. Detailed descriptions of each option, along with multiple suggestions, will be provided. By using this product, waste production can be minimized, encouraging people to find more sustainable ways to repurpose their trash rather than simply discarding it. Our aim is to reduce the impact of climate change and ocean waste, creating a safer environment for both humans and animals on our beautiful planet, Earth")
         learncol8.image("d3df85a0-600f-41f1-9ad3-31da745a9e1d.JPG")
