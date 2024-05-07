@@ -40,7 +40,7 @@ with tab1:
 	st.markdown("<h1 style='text-align: center; color: black;'>ECO INTELLECTS</h1>", unsafe_allow_html=True)
 	homecol1,homecol2 = st.columns([0.7,0.3])
 	homecol2.image("d3df85a0-600f-41f1-9ad3-31da745a9e1d.JPG")
-	st.markdown("<h2 style='text-align: center; color: black;'>Welcome to AI for Earth Waste Management!</h2>", unsafe_allow_html=True)
+	st.markdown("<h3 style='text-align: center; color: black;'>Welcome to AI for Earth Waste Management!</h3>", unsafe_allow_html=True)
 	homecol1.subheader("How It Works")
 	homecol1.markdown("""
 		      - Upload the clicked image
