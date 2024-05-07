@@ -106,8 +106,7 @@ with tab2:
     with st.container(height=320):
         learncol3,learncol4 = st.columns([0.7,0.3])
         learncol3.write("Reduce: Use Wisely, Waste Less Reducing consumption is about being mindful of our purchases and using resources wisely. It involves buying only what we need, choosing products with minimal packaging, and avoiding single-use items whenever possible. By prioritizing quality over quantity, investing in durable goods, and embracing a less-is-more mindset, we can live more sustainably.For reducing, they put it in a bin or contribute it to an area that will reduce and potentially decompose the object. ")
-        learncol4.image("https://images.squarespace-cdn.com/content/v1/5bbfab8a92441bd0f701c276/1592948766199-YW15UMKI0G0A17V95HHB/Reduce")
-   
+        learncol4.image("https://media.licdn.com/dms/image/C5622AQFztQ772Yi6hQ/feedshare-shrink_2048_1536/0/1662368422476?e=2147483647&v=beta&t=P-p1zfZ46lOgpiN0qceiiQ51vJHTl4si2eyN23ZblEs")
     with st.container(height=320):
         learncol5,learncol6 = st.columns([0.3,0.7])
         learncol6.write("Recycle: Close the Loop Recycling is the process of turning old materials into new products, preventing them from ending up in landfills. It's a crucial part of the circular economy, where materials are reused and recycled indefinitely. By separating recyclables like paper, plastic, glass, and metal from our trash, supporting recycling programs, and purchasing products made from recycled materials, and protect the planet for future generations. It could be put into a center that potentially as recycling opportunities so that the object may be built into something else.")
